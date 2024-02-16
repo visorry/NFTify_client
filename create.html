@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="templatemo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Create NFT Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-liberty-market.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="explore.html">Explore</a></li>
+                      <li><a href="myCollections.html">My Collections</a></li>
+                      <li><a href="create.html" class="active">Create Yours</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading normal-space">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6>Liberty NFT Market</h6>
+          <h2>Create Your NFT Now.</h2>
+          <span>Home > <a href="#">Create Yours</a></span>
+          <div class="buttons">
+            <div class="main-button">
+              <a href="explore.html">Explore Our Items</a>
+            </div>
+            <div class="border-button">
+              <a href="create.html">Create Your NFT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item-details-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <div class="line-dec"></div>
+                    <h2>Apply For <em>Your Item</em> Here.</h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <form id="createItemForm">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <fieldset>
+                                <label for="itemTitle">Item Title</label>
+                                <input type="text" name="itemTitle" id="itemTitle" placeholder="Ex. Lyon King" autocomplete="on" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-4">
+                            <fieldset>
+                                <label for="description">Description For Item</label>
+                                <input type="text" name="description" id="description" placeholder="Give us your idea" autocomplete="on" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-4">
+                            <fieldset>
+                                <label for="price">Price Of Item</label>
+                                <input type="text" name="price" id="price" placeholder="Price depends on quality. Ex. 0.06 ETH" autocomplete="on" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label for="royalties">Royalties</label>
+                                <input type="text" name="royalties" id="royalties" placeholder="Common royalties 1-25%" autocomplete="on" required>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label for="picture">Your Picture</label>
+                                <input type="file" id="picture" name="picture" />
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                            <fieldset>
+                              <button type="button" id="form-submit" class="orange-button">Submit Your Applying</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <div class="line-dec"></div>
+                    <h2>This Is <em>Your Item</em> Preview.</h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="section-heading">
+                  <div class="line-dec"></div>
+                  <h2>This Is <em>Your Item</em> Preview.</h2>
+              </div>
+          </div>
+          <div class="col-lg-7">
+              <div class="left-image">
+                  <img src="" alt="Item Preview" id="itemPreviewImage">
+              </div>
+          </div>
+          <div class="col-lg-5 align-self-center">
+              <h4 id="itemTitle">Your Item Title</h4>
+              <span class="author" id="creator">
+                  <!-- Placeholder for creator name -->
+              </span>
+              <p id="itemDescription"><!-- Placeholder for description  --></p>
+              <div class="row">
+                  <div class="col-3">
+                      <span class="bid" id="currentBid">
+                          Current Bid<br><strong id="bidAmount"> ETH</strong><br>
+                      </span>
+                  </div>
+                  <div class="col-4">
+                  </div>
+                  <div class="col-5">
+                      <span class="royalties" id="itemRoyalties">
+                          Royalties: <strong id="royaltiesPercentage"></strong>
+                      </span><br>
+
+                  </div>
+              </div>
+          </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>© 2024 <a href="#">Liberty</a> NFTify
+          &nbsp;&nbsp;
+           <a title="tuyji" rel="sponsored" href="#" target="_blank"></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ... (your existing HTML) ... -->
+
+  <script>
+    document.getElementById('form-submit').addEventListener('click', function () {
+        var formData = new FormData(document.getElementById('createItemForm'));
+        var token = localStorage.getItem('token');
+    
+        if (!token) {
+            console.error('Token not found in local storage');
+            return;
+        }
+    
+        fetch('https://nftifyserver-production.up.railway.app/nfts', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Authorization': 'Bearer ' + token,
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+    
+            // Update HTML with response data
+            document.getElementById('itemPreviewImage').src = `https://nftifyserver-production.up.railway.app/uploads/${data.picture}` ;
+            document.getElementById('itemTitle').textContent = data.itemTitle;
+            document.getElementById('creator').textContent = 'By ' + data.creator;
+            document.getElementById('itemDescription').textContent = data.description;
+            document.getElementById('currentBid').innerHTML = 'Current Bid<br><strong>' + data.price + ' ETH</strong><br>';
+            document.getElementById('itemRoyalties').innerHTML = 'Royalties: <strong>' + data.royalties + '</strong>';
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    });
+    </script>
+
+<!-- ... (your existing HTML) ... -->
+
+  <!-- Scripts -->
+  </body>
+</html>
